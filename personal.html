@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="summary.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/slicknav.min.js"></script>
+    <title>Personal Page</title>
+</head>
+<body>
+    <div class="header-gradient">
+        <link rel="stylesheet" href="../summary.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/slicknav.min.js"></script>
+        <h1><img src="../pumpkin.gif" alt="Pumpkin" width="200" height ="200"/>
+        The Halloween Store</h1>
+        <h2>For the little Goblin in all of us!</h2>
+    </div>
+    <main>
+        <div class="top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper',
+                        label: '',
+                    });
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../productlist.html">Product List</a></li>
+                    <li><a href="../personal.html" class="current">Personal</a>
+                        <ul>
+                            <li><a href="page1.html">Page 1</a></li>
+                            <li><a href="page2.html">Page 2</a></li>
+                            <li><a href="page3.html">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../decoratingideas.html">Decorating Ideas</a></li>
+                    <li><a href="../email.html">Join Email</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="column" id="left-sidebar">
+                <ul class="vertical-menu">
+                    <li><a href="../props.html">Pictures</a></li>
+                    <li><a href="../costumes.html">Home Videos</a></li>
+                    <li><a href="../specialeffects.html">Haunted Houses</a></li>
+                    <li><a href="../masks.html">Scary Stories</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h2>Personal Page</h2>
+            <section>
+                <h3>Welcome to My Personal Page</h3>
+                <video width="640" height="360" controls>
+                    <source src="../media/sample.mp4" type="video/mp4">
+                    <!-- Fallback content -->
+                    Your browser does not support the video tag.
+                    <object type="application/x-shockwave-flash" data="../media/flashfallback.swf" width="640" height="360">
+                        <param name="movie" value="../media/flashfallback.swf">
+                        <param name="flashvars" value="controlbar=over&amp;image=../media/sample.jpg&amp;file=../media/sample.mp4">
+                        <!-- Fallback content -->
+                        Your browser does not support Flash.
+                    </object>
+                </video>
+            </section>
+        </div>
+        <div class="empty-space"></div>
+    </main>
+    <footer>
+        <p>© 2023 John Barada AWD1000</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <div class = "header-gradient">
+    <link rel="stylesheet" href="styles/slicknav.css"> <!-- Link to SlickNav CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery from CDN -->
+    <script src="js/slicknav.min.js"></script> <!-- SlickNav JavaScript -->
+    <link rel="stylesheet" href="your-styles.css"> <!-- Link to your CSS file -->
+    <h1><img src="pumpkin.gif" alt="Pumpkin" width="200" height ="200"/>
+    The Halloween Store</h1>
+	<h2>For the little Goblin in all of us!<h2>
+    </div>
+</head>
+<body>
+    <main>
+        <div class = "top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper', // Place the SlickNav menu in your wrapper element
+                        label: '', // Set label to empty to hide the default label
+                    });
+            
+                    // Populate SlickNav with your navigation links
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a href="productlist.html">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoratingideas.html">Decorating Ideas</a>
+                    <li><a href="email.html">Join Email</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div>
+                <nav class="column">
+                    <ul class="vertical-menu">
+                        <li><a href="props.html">Props</a></li>
+                        <li><a href="costumes.html">Costumes</a></li>
+                        <li><a href="specialeffects.html">Special Effects</a></li>
+                        <li><a href="masks.html">Masks</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <section class="column">
+                    <div class="product-details">
+                      <img src="images\cat1.jpg" alt="" width="200" height="200">
+                      <div class="text-details">
+                        <h1>20" Deranged cat</h1>
+                        <p>This cat provides its own light and is perfect for a backyard haunting.</p>
+                        <p>Price: $19.99</p>
+                      </div>
+                    </div>
+                  </section>     
+            <section class="column product-related">
+                <h1>Customers who bought this product also bought:</h1>
+                <ul>
+                  <li>
+                    <img src="images\flying_bats.jpg" alt="" width="50" height="50">
+                    <p>Flying Bats</p>
+                  </li>
+                  <li>
+                    <img src="images\rat1.jpg" alt="" width="50" height="50">
+                    <p>16" Ugly Rat</p>
+                  </li>
+                  <li>
+                    <img src="images\strobe1.jpg" alt="" width="50" height="50">
+                    <p>Mini Strobe Light</p>
+                  </li>
+                </ul>
+              </section>
+              
+        </div>
+        <div class="empty-space"></div>
+    </main>
+    <footer>
+        <p>© 2023 John Barada AWD1000</p>
+    </footer>
+</body>
+</html>

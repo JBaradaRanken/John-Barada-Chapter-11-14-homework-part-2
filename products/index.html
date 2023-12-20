@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="summary.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/slicknav.min.js"></script>
+    <title>Product List</title>
+</head>
+<body>
+    <main>
+        <div class="top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper',
+                        label: '',
+                    });
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="productlist.html" class="current">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoratingideas.html">Decorating Ideas</a></li>
+                    <li><a href="email.html">Join Email</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="column" id="left-sidebar">
+                <ul class="vertical-menu">
+                    <li><a href="props.html">Props</a></li>
+                    <li><a href="costumes.html">Costumes</a></li>
+                    <li><a href="specialeffects.html">Special Effects</a></li>
+                    <li><a href="masks.html">Masks</a></li>
+                </ul>
+            </nav>
+            <nav class="column" id="right-sidebar" style="float: right; width: 180px; height: 500px; background-color: #F5DEB3; padding: 10px;">
+                <h2>Featured Items</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <a href="#">
+                                <img src="../images/flying_bats.jpg" alt="Flying Bats" width="80" height="80">
+                            </a>
+                            <figcaption><a href="#">Flying Bats</a></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="#">
+                                <img src="../images/rat1.jpg" alt="Rat" width="80" height="80">
+                            </a>
+                            <figcaption><a href="#">Rat</a></figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="#">
+                                <img src="../images/strobe1.jpg" alt="Strobe" width="80" height="80">
+                            </a>
+                            <figcaption><a href="#">Strobe</a></figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <table>
+                <caption>Product List</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Props</td>
+                        <td><a href="products/product1.html">Product 1</a></td>
+                        <td class="highlight-price">$19.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="products/product2.html">Product 2</a></td>
+                        <td class="highlight-price">$24.99</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Costumes</td>
+                        <td><a href="products/product3.html">Product 3</a></td>
+                        <td class="highlight-price">$29.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href="products/product4.html">Product 4</a></td>
+                        <td class="highlight-price">$39.99</td>
+                        
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Special Effects</td>
+                      <td><a href="products/product5.html">Product 3</a></td>
+                      <td class="highlight-price">$29.99</td>
+                  </tr>
+                  <tr>
+                      <td><a href="products/product6.html">Product 4</a></td>
+                      <td class="highlight-price">$39.99</td>
+                      
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Masks</td>
+                    <td><a href="products/product7.html">Product 3</a></td>
+                    <td class="highlight-price">$29.99</td>
+                </tr>
+                <tr>
+                    <td><a href="products/product8.html">Product 4</a></td>
+                    <td class="highlight-price">$39.99</td>
+                    
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="empty-space"></div>
+    </main>
+    <footer>
+        <p>© 2023 John Barada AWD1000</p>
+    </footer>
+</body>
+</html>

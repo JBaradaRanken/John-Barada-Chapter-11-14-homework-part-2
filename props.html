@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="styles/slicknav.css"> <!-- Link to SlickNav CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery from CDN -->
+    <script src="js/slicknav.min.js"></script> <!-- SlickNav JavaScript -->
+    <link rel="stylesheet" href="your-styles.css"> <!-- Link to your CSS file -->
+    <h1><img src="pumpkin.gif" alt="Pumpkin" width="200" height ="200"/>
+    The Halloween Store</h1>
+	<h2>For the little Goblin in all of us!<h2>
+    </div>
+</head>
+<body>
+    <main>
+        <div class = "top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper', // Place the SlickNav menu in your wrapper element
+                        label: '', // Set label to empty to hide the default label
+                    });
+            
+                    // Populate SlickNav with your navigation links
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a href="productlist.html">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoratingideas.html">Decorating Ideas</a>
+                    <li><a href="email.html">Join Email</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div>
+                <nav class="column">
+                    <ul class="vertical-menu">
+                        <li><a href="props.html">Props</a></li>
+                        <li><a href="costumes.html">Costumes</a></li>
+                        <li><a href="specialeffects.html">Special Effects</a></li>
+                        <li><a href="masks.html">Masks</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h1>Props</h1>
+                <h2>Flying Bats</h2>
+                <h3>Bats flying in front of a full moon make for an eerie spectacle. 
+                    <p><strong>Price</strong> 69.99</p> </h3>
+
+                    <h2>20" Deranged cat</h2>
+                    <h3>This cat provides its own light and is perfect for a backyard haunting. 
+                        <p><strong>Price</strong> 19.99</p> </h3>
+
+                        <h2>16" Rat</h2>
+                        <h3>This guy is sure to shorten the stay of any unwanted house guests. 
+                            <p><strong>Price</strong> 14.99</p> </h3>
+
+                            <h2>20" Rat</h2>
+                            <h3>Yuck! This one will keep you awake at night. 
+                                <p><strong>Price</strong> 19.99</p> </h3>
+
+                                <h2>Life-size skeleton</h2>
+                                <h3>This blown plastic skeleton will be the life of the party. Use him as is or dress him up for an even better effect. 
+                                    <p><strong>Price</strong> 14.95</p> </h3>
+            </div>
+    </main>
+</body>
+            <footer>
+                <p>© 2023 John Barada AWD1000</p>
+            </footer>

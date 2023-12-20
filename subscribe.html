@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main_rwd1.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <div class = "header-gradient">
+    <link rel="stylesheet" href="styles/slicknav.css"> <!-- Link to SlickNav CSS -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery from CDN -->
+    <script src="js/slicknav.min.js"></script> <!-- SlickNav JavaScript -->
+    <link rel="stylesheet" href="your-styles.css"> <!-- Link to your CSS file -->
+    <h1><img src="pumpkin.gif" alt="Pumpkin" width="200" height ="200"/>
+    The Halloween Store</h1>
+	<h2>For the little Goblin in all of us!<h2>
+    </div>
+</head>
+<body>
+    <main>
+        <div class = "top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper',
+                        label: '',
+                    });
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a href="productlist.html">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoratingideas.html">Decorating Ideas</a>
+                    <li><a href="email.html">Join Email</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div>
+                <nav class="column" id="left-sidebar">
+                    <ul class="vertical-menu">
+                        <li><a href="props.html">Props</a></li>
+                        <li><a href="costumes.html">Costumes</a></li>
+                        <li><a href="specialeffects.html">Special Effects</a></li>
+                        <li><a href="masks.html">Masks</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+            <section class="row">
+                <h1>Thank You for Subscribing!</h1>
+<p>You have successfully subscribed to our newsletter. We'll keep you updated with the latest Halloween news and offers.</p>
+ 
+            </section>   
+        </div>
+        <div class="empty-space"></div>
+    </main>
+
+    <footer>
+        <p>© 2023 John Barada AWD1000</p>
+    </footer>
+</body>
+</html>

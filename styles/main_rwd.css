@@ -1,0 +1,157 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-image: url("images/bats.gif");
+  background-repeat: repeat;
+  font-size: 16px; /* Set a base font size */
+}
+
+#wrapper {
+  max-width: 60em; /* Convert max-width to ems */
+  margin: 0 auto;
+  padding: 1em; /* Convert padding to ems */
+}
+
+.sidebar {
+  width: 25%; /* Adjust as needed */
+  padding: 1em; /* Convert padding to ems */
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-right: 2%; /* Convert margin to ems */
+}
+
+/* Update the main content width */
+.main {
+  width: 70%; /* Adjust as needed */
+  margin-bottom: 1em; /* Convert margin to ems */
+  padding: 1em; /* Convert padding to ems */
+}
+
+/* Update the top menu width */
+.top-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  font-size: 150%; /* Convert font-size to percentage */
+  text-align: center;
+  width: 100%; /* Full width */
+}
+
+/* Update the top menu list items to display horizontally */
+.top-menu ul li {
+  display: inline;
+  margin-right: 0.625em; /* Convert margin to ems */
+}
+
+/* Add a container to center the content */
+.container {
+  max-width: 95%; /* Adjust to occupy 95% of the browser window */
+  margin: 0 auto;
+  padding: 1em; /* Convert padding to ems */
+}
+
+/* Update the footer */
+footer {
+  position: relative; /* Remove fixed positioning */
+  width: 100%;
+  font-size: 100%; /* Set font-size back to the default (16px) */
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding: 0.3125em; /* Convert padding to ems */
+  border-top: 1px solid black;
+  background: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+  margin-top: 1.25em; /* Convert margin to ems */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 48em) { /* Convert max-width to ems */
+  /* Adjust the sidebar and main content width for smaller screens */
+  .sidebar {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0;
+  }
+  .main {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Make images scalable and limit their sizes */
+img {
+  max-width: 100%; /* Scale images to fit their containers */
+}
+
+/* Limit the header image minimum width */
+header img {
+  min-width: 2.5em; /* Convert minimum width to ems */
+}
+/* Existing CSS rules */
+
+/* Media query for screens with a maximum width of 800 pixels */
+@media (max-width: 800px) {
+  body {
+      background-image: none; /* Remove background image */
+      box-shadow: none; /* Remove shadow from the body */
+      font-size: 90%; /* Reduce font size to 90% */
+  }
+  /* Add additional styles as needed for smaller screens */
+}
+@media (max-width: 767px) {
+  /* Style for screens <= 767 pixels wide */
+  
+  /* Hide your existing navigation menu */
+  .top-menu ul {
+      display: none;
+  }
+  
+  /* Add styles for the SlickNav menu */
+  #main-menu {
+      display: block; /* Display the SlickNav menu */
+  }
+}
+/* ... Your existing CSS ... */
+
+/* Media query for screens with a maximum width of 767 pixels */
+@media (max-width: 767px) {
+  /* Style for screens <= 767 pixels wide */
+  
+  /* Hide your existing navigation menu */
+  .top-menu ul {
+      display: none;
+  }
+  
+  /* Add styles for the SlickNav menu at the top */
+  #main-menu {
+      display: block; /* Display the SlickNav menu at the top */
+      position: fixed; /* Fixed position at the top */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Ensure it's above other content */
+      background-color: #333;
+  }
+
+  /* Style the navigation bar to be on the left */
+  .sidebar {
+      display: block; /* Display the sidebar */
+      width: 25%; /* Adjust the width as needed */
+      padding: 1em; /* Convert padding to ems */
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      float: left; /* Float it to the left */
+  }
+  
+  /* Style the main content to be on the right */
+  .main {
+      width: 70%; /* Adjust the width as needed */
+      margin-bottom: 1em; /* Convert margin to ems */
+      padding: 1em; /* Convert padding to ems */
+      margin-left: 27%; /* Add a margin to keep space from the sidebar */
+  }
+  
+  /* Add any additional styles as needed for the single-column layout */
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="summary.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <title>Email Subscription</title>
+</head>
+<body>
+    <main>
+        <div class="top-menu">
+            <script>
+                $(document).ready(function(){
+                    $('#main-menu').slicknav({
+                        prependTo:'#wrapper',
+                        label: '',
+                    });
+                    $('#main-menu').slicknav('refresh'); 
+                });
+            </script>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="productlist.html">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoratingideas.html">Decorating Ideas</a></li>
+                    <li><a href="email.html" class="current">Join Email</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="column" id="left-sidebar">
+                <ul class="vertical-menu">
+                    <li><a href="props.html">Props</a></li>
+                    <li><a href="costumes.html">Costumes</a></li>
+                    <li><a href="specialeffects.html">Special Effects</a></li>
+                    <li><a href="masks.html">Masks</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h2>Email Subscription</h2>
+            <section>
+                <form action="subscribe.html" method="get" id="subscribeForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="text" id="zipCode" name="zipCode" pattern="\d{5}" title="Enter a valid 5-digit zip code" placeholder="e.g., 12345" required>
+
+                    <button type="submit" style="background-color: orange; border: 1px solid black;">Subscribe</button>
+                </form>
+            </section>
+        </div>
+        <div class="empty-space"></div>
+    </main>
+    <footer>
+        <p>© 2023 John Barada AWD1000</p>
+    </footer>
+</body>
+</html>
